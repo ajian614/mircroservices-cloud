@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: cloud-config-client # 需要从github上读取的资源名称，主要没有yml后缀名
+      profile: dev #本次访问的配置项
+      label: main
+      uri: http://127.0.0.1:5001 # 本微服务启动后先去找5001服务，通过SpringCloudConfig获取GitHub的服务地址

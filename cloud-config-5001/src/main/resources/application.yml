@@ -3,9 +3,9 @@ server:
 
 spring:
   application:
-    name: cloud-config
+    name: cloud-config-5001
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/ajian614/microservice-cloud-config.git  			# GitHub上面的git仓库https地址
+          uri: https://github.com/ajian614/microservice-cloud-config56.git  # GitHub上面的git仓库https地址
