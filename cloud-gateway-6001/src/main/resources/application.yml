@@ -1,0 +1,30 @@
+###consul服务端端口
+server:
+  port: 6001
+
+spring:
+  application:
+    name: cloud-gateway-6001
+  ####consul注册中心地址
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1
+        service-name: cloud-gateway
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能，利用微服务名进行路由(默认为true)
+      routes:
+        - id: gateway-service1 #我们自定义的路由 ID，保持唯一
+          # uri: http://localhost:8001 #目标服务地址
+          uri: lb://cloud-provider-goods # 支持负载均衡
+          filters:
+            - AddRequestHeader=X-Request-Foo, Bar # 当该路由匹配后，会自动在请求头里面添加key:X-Request-Foo value:Bar
+            - AddRequestParameter=color, red # 当该路由匹配后，会自动在请求参数里面添加key:color value:red
+          predicates:
+            - Path=/book/getBooks/** #断言，条件满足则路由跳转
+            #- Before=2020-12-14T11:06:48.147+08:00[Asia/Shanghai]
+            #- Header=X-Request-Id, \d+ # 第一个参数是header请求头的名，第二个参数是对应的值支持正则表达式 {1,n}

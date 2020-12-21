@@ -1,0 +1,11 @@
+server:
+  port: 5001
+
+spring:
+  application:
+    name: cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ajian614/microservice-cloud-config.git  			# GitHub上面的git仓库https地址
