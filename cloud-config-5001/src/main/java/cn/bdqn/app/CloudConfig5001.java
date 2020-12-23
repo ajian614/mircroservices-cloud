@@ -1,6 +1,5 @@
 package cn.bdqn.app;
 
-import com.sun.org.apache.xml.internal.security.encryption.AgreementMethod;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;

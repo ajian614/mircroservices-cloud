@@ -1,6 +1,0 @@
-cn\bdqn\controller\BookController.class
-cn\bdqn\service\impl\BookServiceImpl.class
-cn\bdqn\service\IBookService.class
-cn\bdqn\entity\Book.class
-cn\bdqn\mapper\BookMapper.class
-cn\bdqn\app\GoodsApp8001.class
