@@ -17,7 +17,6 @@
         <module>cloud-hystrix-dashboard-7001</module>
         <module>cloud-gateway-6001</module>
         <module>cloud-config-5001</module>
-        <module>cloud-config-client-5002</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
