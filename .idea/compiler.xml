@@ -12,14 +12,19 @@
         <module name="cloud-provider-goods-8001" />
         <module name="cloud-provider-goods-8002" />
         <module name="product-service-hystrix-8001" />
+        <module name="cloud-config-client-5003" />
         <module name="microservice-cloud-api" />
+        <module name="cloud-config-client-50021" />
         <module name="cloud-config-5001" />
         <module name="cloud-hystrix-dashboard-7001" />
+        <module name="cloud-config-client-5002" />
         <module name="cloud-consumer-order-9001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="cloud-config-client-5002" target="1.8" />
+      <module name="cloud-config-client-5002 (1) (cn.bdqn.springcloud)" target="1.8" />
+      <module name="cloud-config-client-50021" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,6 +32,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-config-5001" options="" />
       <module name="cloud-config-client-5002" options="" />
+      <module name="cloud-config-client-50021" options="" />
+      <module name="cloud-config-client-5003" options="" />
       <module name="cloud-consumer-order-9001" options="" />
       <module name="cloud-gateway-6001" options="" />
       <module name="cloud-hystrix-dashboard-7001" options="" />
